@@ -2,6 +2,7 @@ require("dotenv").config();
 const { default: mongoose } = require("mongoose");
 
 const mogno_uri = process.env.mogno_uri || "mongodb://127.0.0.1:27017";
+console.log(mogno_uri);
 
 function Connection() {
   try {

@@ -17,7 +17,7 @@ async function userCreateController(req, res) {
         .send({ status: "failed", msg: "user already exist" });
 
     const newUser = await usermodel.create({ name, email, phone });
-    req.session.user = newUser;
+
     res.send({
       newUser,
     });
