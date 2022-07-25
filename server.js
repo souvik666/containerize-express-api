@@ -20,5 +20,5 @@ app.use("/todo", todoRouter);
 
 app.listen(PORT, async (req, res) => {
   Connection();
-  console.log(`Running PORT :${PORT}`);
+  console.log(`Running PORT : ${PORT}`);
 });
